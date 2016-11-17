@@ -1,0 +1,30 @@
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0.5rem;
+  background-color: cornflowerblue;
+  font-size: .8em !important;
+}
+.div-table{
+  display:table;         
+  width:100%;                  
+  border-spacing:5px;
+}
+.div-table-row{
+  display:table-row;
+  width:100%;
+  clear:both;
+}
+.div-table-col{
+  float:left;/*fix for  buggy browsers*/
+  display:table-column;         
+  width:auto;         
+}
+
+.div-table-col2{
+  float:right;
+  display:table-column;         
+  width:auto;         
+}
