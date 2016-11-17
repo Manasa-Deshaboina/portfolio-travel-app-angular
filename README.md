@@ -13,7 +13,7 @@ Basic core software required are: Git, Node.js and its package manager (npm).
 
 ### Clone travel-app
 ```
-git clone https://github.com/satya-ip/portfolio-travel-app-angular.git
+git clone https://github.com/Manasa-Deshaboina/portfolio-travel-app-angular.git
 cd portfolio-travel-app-angular
 ```
 
