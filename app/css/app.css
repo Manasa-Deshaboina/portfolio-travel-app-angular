@@ -11,14 +11,15 @@ body  {
     background-image: url("../img/travel_program.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
+    overflow: auto;
 }
 
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 10px 0;
     overflow: hidden;
-    background-color: cornflowerblue;
+    background-color: #E4E4E9;
 
 }
 
@@ -40,7 +41,7 @@ li a.active {
 
 
 li a:hover:not(.active) {
-    background-color: black;
+    background-color: #13E7FF;
     color: white;
 }
 
@@ -48,4 +49,84 @@ li a:hover:not(.active) {
     text-align: center;
     letter-spacing: 20px;
 
+}
+
+
+
+.contact{
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 16px;
+    background: #F7F7F7;
+}
+.contact h1{
+    background: #E4E4E9;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #000;
+    margin: -16px -16px 16px -16px;
+}
+.contact input[type="text"],
+.contact input[type="date"],
+.contact input[type="datetime"],
+.contact input[type="email"],
+.contact input[type="number"],
+.contact input[type="search"],
+.contact input[type="time"],
+.contact input[type="url"],
+.contact textarea,
+.contact select 
+{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+.contact input[type="text"]:s,
+.contact input[type="date"]:focus,
+.contact input[type="datetime"]:focus,
+.contact input[type="email"]:focus,
+.contactinput[type="number"]:focus,
+.contact input[type="search"]:focus,
+.contact input[type="time"]:focus,
+.contact input[type="url"]:focus,
+.contact textarea:focus,
+.contact select:focus
+{
+    box-shadow: 0 0 5px #43D1AF;
+    padding: 3%;
+    border: 1px solid #43D1AF;
+}
+
+.contact input[type="submit"],
+.contact input[type="button"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: #13E7FF;
+    border-bottom: 2px solid #fff;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;    
+    color: #fff;
+}
+.contact input[type="submit"]:hover,
+.contact input[type="button"]:hover{
+    background: #333;
 }
