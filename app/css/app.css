@@ -17,7 +17,7 @@ body  {
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 10px 0;
+    padding: 15px 0;
     overflow: hidden;
     background-color: #E4E4E9;
 
@@ -52,7 +52,7 @@ li a:hover:not(.active) {
 }
 
 
-
+/*contact CSS*/
 .contact{
     font: 95% Arial, Helvetica, sans-serif;
     max-width: 400px;
