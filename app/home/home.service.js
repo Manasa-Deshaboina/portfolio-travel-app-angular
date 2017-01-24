@@ -1,24 +1,14 @@
 'use strict';
 
-angular.module('travelApp.home2', [] )
-.factory('homeService', ['$http', '$q',
-    function ($http, $q) {
+angular.module('travelApp.home2', ['travelApp.factory'] )
+.service('homeService', ['homeFactory',
+    function (homeFactory) {
         var url = "/app/home/restaurants.json";
 
-        function getRestaurants(userSearch) {
-            var deferred = $q.defer();
- 
-            $http.get(url)
-            .then(function(response) {
-
-                deferred.resolve(response);
-            });
-
-            return deferred.promise;
+        this.getRestaurants = function() {
+          
+            return homeFactory.getRestaurants();
         }
 
-        return {
-            getRestaurants: getRestaurants
-        };
     }
 ]);

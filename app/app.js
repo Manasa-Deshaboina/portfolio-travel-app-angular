@@ -3,6 +3,7 @@
 // Declare app level module which depends on views, and components
 angular.module('travelApp', [
   'ngRoute',
+    'travelApp.factory',
   'travelApp.home',
   'travelApp.home2',
   'travelApp.places',
@@ -10,5 +11,15 @@ angular.module('travelApp', [
   'travelApp.version'
 ]).
 config(['$routeProvider', function($routeProvider) {
-  $routeProvider.otherwise({redirectTo: '/home'});
+  $routeProvider.when('/home', {
+            templateUrl: 'home/home.html',
+            controller: 'HomeCtrl',
+            resolve: {
+                moviesPrepService: moviesPrepService
+            }
+  })
 }]);
+
+function moviesPrepService(homeService) {
+    return homeService.getRestaurants();
+}

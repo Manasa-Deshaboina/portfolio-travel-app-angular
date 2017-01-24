@@ -1,7 +1,14 @@
 <div class"welcome" ng-app="travelApp.home">
     <div class"welcome" ng-controller="HomeCtrl">
         <h1 class"welcome">Welcome to Your Travel Website</h1>        
-      
+       
+                <p>Name : <input type="text" ng-model="name" placeholder="Enter name here"></p>
+                 <h3>Display user: {{name}}</h3>
+        
+                <div ng-repeat="model in names">
+                  {{model.value}}
+                </div>
+     
     </div>    
     
 </div>
