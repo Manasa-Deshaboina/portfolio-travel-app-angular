@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "description": "Simple travel application developed using Angular.js",
-  "repository": "https://github.com/satya-ip/portfolio-travel-app-angular",
+  "repository": "https://github.com/Manasa-Deshaboina/portfolio-travel-app-angular",
   "license": "",
   "devDependencies": {
     "bower": "^1.3.1",
